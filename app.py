@@ -79,7 +79,7 @@ def main():
                         # Identification
                         suggestion = data['suggestions'][0]
                         plant_probability=suggestion.get('probability', 0)
-                        if plant_probability < 0.5:
+                        if plant_probability < 0.05:
                             st.markdown("""
                                 <div class="error-message">
                                     <strong>⚠️ Invalid Specimen</strong><br>
