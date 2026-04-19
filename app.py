@@ -54,7 +54,11 @@ def main():
     st.sidebar.success("Connected to AI, ready for analysis.")
     st.sidebar.markdown("---")
     st.sidebar.write("This system uses AI to identify plant species and detect physiological stress or diseases based on datasets.")
-
+    st.sidebar.title("ℹ️ ABOUT DEVELOPERS : ")
+    st.sidebar.success("Prathamesh Hon : FY BTech CSE")
+    st.sidebar.success("Mayur B Gund : FY BTech CSE")
+    st.sidebar.success("Abhishek A Shinde : FY BTech CSE")
+    st.sidebar.success("Danish A Shaikh : FY BTech CSE")
     col1, col2 = st.columns([1, 1], gap="large")
 
     with col1:
@@ -162,7 +166,9 @@ def main():
             """, unsafe_allow_html=True)
 
     st.markdown("<br><hr>", unsafe_allow_html=True)
-    st.markdown('<div style="text-align: center; color: #5A7A5A; font-size: 1rem;">Dedicated to <strong>Shetkari Raja</strong> | Plant Health Engine | By <strong>Bug Hunters</strong></div>', unsafe_allow_html=True)
  
+    st.markdown('<div style="text-align: center; color: #D4AF37; font-size: 1.7rem;">Dedicated to <strong>Shetkari Raja</strong> | Plant Health Engine | By <strong>Bug Hunters</strong></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: center; color: #5A7A5A; font-size: 1rem;"><footer>&copy; 2026 Bug Hunters. All rights reserved.</footer></div>', unsafe_allow_html=True)
+
 if __name__ == "__main__":
     main()
