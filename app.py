@@ -45,31 +45,31 @@ def main():
     local_css("style.css")
 
     # Header
-    st.markdown('<p class="main-title">🌿 Crop Disease Detector</p>', unsafe_allow_html=True)
-    st.markdown('<p class="subtitle">Automated Plant Pathology Analysis</p>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-title">🌿 Crop Disease Detector</h1>', unsafe_allow_html=True)
+    st.markdown('<p class="subtitle">Automated Plant Disease Analysis</p>', unsafe_allow_html=True)
     st.markdown("<hr>", unsafe_allow_html=True)
 
     # Sidebar (Information only, no input)
     st.sidebar.title("ℹ️ System Status")
-    st.sidebar.success("API Connection: Active")
+    st.sidebar.success("Connected to AI, ready for analysis.")
     st.sidebar.markdown("---")
-    st.sidebar.write("This system uses AI to identify plant species and detect physiological stress or pathogens.")
+    st.sidebar.write("This system uses AI to identify plant species and detect physiological stress or diseases based on datasets.")
 
     col1, col2 = st.columns([1, 1], gap="large")
 
     with col1:
-        st.markdown("### 📤 Upload Plant Image")
+        st.markdown("### 📤 Upload Plant Leaf Image")
         uploaded_file = st.file_uploader("Select a leaf photo for analysis", type=['jpg', 'jpeg', 'png'])
         
         if uploaded_file:
-            st.image(uploaded_file, caption="Specimen for Analysis", use_container_width=True)
+            st.image(uploaded_file, caption="Specimen for Analysis", width="stretch")
 
     with col2:
         st.markdown("### 🔍 Diagnosis Results")
         
         if uploaded_file:
             if st.button("Begin Analysis"):
-                with st.spinner("Scanning for pathogens..."):
+                with st.spinner("Scanning the leaf..."):
                     img_base64 = encode_image(uploaded_file)
                     data, error = identify_and_diagnose(img_base64)
                     
@@ -79,7 +79,7 @@ def main():
                         # Identification
                         suggestion = data['suggestions'][0]
                         plant_probability=suggestion.get('probability', 0)
-                        if plant_probability < 0.05:
+                        if plant_probability < 0.01:
                             st.markdown("""
                                 <div class="error-message">
                                     <strong>⚠️ Invalid Specimen</strong><br>
@@ -105,14 +105,14 @@ def main():
                             if health.get('is_healthy'):
                                 st.markdown("""
                                     <div class="success-message">
-                                        <strong>✅ Healthy Specimen</strong><br>
+                                        <strong>✅ Healthy Plant</strong><br>
                                         No significant diseases or nutrient deficiencies detected.
                                     </div>
                                 """, unsafe_allow_html=True)
                             else:
                                 # Get the most likely disease
                                 top_disease = health['diseases'][0]
-                                if top_disease['probability']<0.10:
+                                if top_disease['probability']<0.05:
                                     st.markdown("""
                                         <div class="warning-message">
                                             <strong>⚠️ Low Confidence</strong><br>
@@ -147,7 +147,7 @@ def main():
                                             bio_action = " ".join(bio_action)
                                         
                                         # Render as simple text
-                                        st.markdown("**Action Plan:**")
+                                        st.markdown("**Action Plan required :**")
                                         st.write(bio_action)
                                     # with st.expander("Treatment & Care Guide"):
                                     #     details = top_disease.get('disease_details', {})
@@ -162,7 +162,7 @@ def main():
             """, unsafe_allow_html=True)
 
     st.markdown("<br><hr>", unsafe_allow_html=True)
-    st.markdown('<div style="text-align: center; color: #5A7A5A; font-size: 0.8rem;">Internal Build v1.1 | Enterprise Health Engine</div>', unsafe_allow_html=True)
-
+    st.markdown('<div style="text-align: center; color: #5A7A5A; font-size: 1rem;">Dedicated to <strong>Shetkari Raja</strong> | Plant Health Engine | By <strong>Bug Hunters</strong></div>', unsafe_allow_html=True)
+ 
 if __name__ == "__main__":
     main()
