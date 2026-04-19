@@ -4,7 +4,7 @@ import base64
 import os
 
 # 1. HARDCODE YOUR KEY HERE
-PLANT_ID_API_KEY = "lb1a86AfVQGzvEmsSqWRBZhD4yRw3VA9bzkMml8BXku8t3o3sX" 
+PLANT_ID_API_KEY = "9SJjSWw1PekRizAEMAqV25jvAIUsmEQvVh4Ewor35DXKgLvzSb" 
 
 # Page Configuration
 st.set_page_config(
