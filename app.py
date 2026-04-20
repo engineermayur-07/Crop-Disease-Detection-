@@ -45,7 +45,7 @@ def main():
     local_css("style.css")
 
     # Header
-    st.markdown('<h1 class="main-title">🌿 Crop Disease Detector</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-title">🌿 Crop Suraksha</h1>', unsafe_allow_html=True)
     st.markdown('<p class="subtitle">Automated Plant Disease Analysis</p>', unsafe_allow_html=True)
     st.markdown("<hr>", unsafe_allow_html=True)
 
