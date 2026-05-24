@@ -7,7 +7,6 @@
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://streamlit.io)
 [![Plant.id API](https://img.shields.io/badge/Plant.id-API%20v2-3ea94b?style=flat)](https://plant.id)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)](LICENSE)
 
 *Dedicated to **Shetkari Raja** — By Team Bug Hunters*
 
@@ -38,7 +37,7 @@ The app is built with Python + Streamlit and powered by the **Plant.id API**, wh
 ## 🖥️ Live Demo
 
 > **Try the interactive UI demo** embedded below (click any specimen card and hit "Begin Analysis"):
-
+[!Live Demo](crop_suraksha_demo.html)
 An interactive walkthrough demo is available in the repository's README on GitHub. To run the live application locally, follow the setup steps below.
 
 ---
@@ -137,7 +136,7 @@ PLANT_ID_API_KEY = st.secrets["PLANT_ID_API_KEY"]
 
 ## 🔒 Security Notice
 
-> ⚠️ **Important:** The current version has the API key hardcoded in `app.py`. Before pushing to a public repository or deploying, move it to environment variables or Streamlit secrets as shown above. Never commit live API keys to GitHub.
+> ⚠️ **Important:** The current version has the API key placeholder in `app.py`.
 
 ---
 
@@ -174,21 +173,17 @@ Contributions are welcome — especially for localisation into Indian regional l
 
 ## 👥 Developers
 
-Built with ❤️ by **Team Bug Hunters** — FY B.Tech Computer Science Engineering
+Built with ❤️ by **Team Bug Hunters** — FY B.Tech Computer Science Students
 
-| Name | Role |
-|---|---|
-| **Mayur B Gund** | FY B.Tech Computer Engineering |
-| **Rohit J Khokale** | FY B.Tech Computer Engineering |
+ 
+| **Mayur B Gund** | FY B.Tech CSE |
 | Prathamesh Hon | FY B.Tech CSE |
 | Abhishek A Shinde | FY B.Tech CSE |
 | Danish A Shaikh | FY B.Tech CSE |
 
 ---
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
+ 
 
 ---
 
