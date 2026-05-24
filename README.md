@@ -38,9 +38,8 @@ The app is built with Python + Streamlit and powered by the **Plant.id API**, wh
 
 > **Try the interactive UI demo** embedded below (click any specimen card and hit "Begin Analysis"):
 
-[Live Demo](crop_suraksha_demo.html)
-
- 
+[Live Demo](https://bughunters.oneapp.dev/)
+  
 ---
 
 ## 📸 How It Works
