@@ -37,7 +37,9 @@ The app is built with Python + Streamlit and powered by the **Plant.id API**, wh
 ## 🖥️ Live Demo
 
 > **Try the interactive UI demo** embedded below (click any specimen card and hit "Begin Analysis"):
-[!Live Demo](crop_suraksha_demo.html)
+<div>
+[Live Demo](crop_suraksha_demo.html)
+</div>
 An interactive walkthrough demo is available in the repository's README on GitHub. To run the live application locally, follow the setup steps below.
 
 ---
@@ -175,9 +177,10 @@ Contributions are welcome — especially for localisation into Indian regional l
 
 Built with ❤️ by **Team Bug Hunters** — FY B.Tech Computer Science Students
 
- 
+|Name| |  |
+|---|---|
 | **Mayur B Gund** | FY B.Tech CSE |
-| Prathamesh Hon | FY B.Tech CSE |
+| **Prathamesh Hon** | FY B.Tech CSE |
 | Abhishek A Shinde | FY B.Tech CSE |
 | Danish A Shaikh | FY B.Tech CSE |
 
