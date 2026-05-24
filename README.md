@@ -175,14 +175,14 @@ Contributions are welcome — especially for localisation into Indian regional l
 ## 👥 Developers
 
 Built with ❤️ by **Team Bug Hunters** — FY B.Tech Computer Science Students
+ 
 
-| Name | | Role |
-|---|---|
+| Name | Role |
+| :--- | :--- |
 | **Mayur B Gund** | FY B.Tech CSE |
 | **Prathamesh Hon** | FY B.Tech CSE |
-| Abhishek A Shinde | FY B.Tech CSE |
-| Danish A Shaikh | FY B.Tech CSE |
-
+| **Abhishek A Shinde** | FY B.Tech CSE |
+| **Danish A Shaikh** | FY B.Tech CSE |
 ---
 
  
